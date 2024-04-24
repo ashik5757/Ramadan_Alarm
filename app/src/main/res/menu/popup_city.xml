@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/naogaon"
+        android:title="নওগাঁ"
+        android:font="@font/charu_regular" />
+
+    <item
+        android:id="@+id/dhaka"
+        android:title="ঢাকা"
+        android:font="@font/charu_regular"/>
+
+    <item
+        android:id="@+id/chittagong"
+        android:title="চট্টগ্রাম"
+        android:font="@font/charu_regular"/>
+
+</menu>

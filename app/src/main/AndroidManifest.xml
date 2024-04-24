@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+<!--    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>-->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/decoration"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/decoration"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="30">
+        <activity
+            android:name=".SehriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".LauncherActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IfterActivity"
+            android:exported="false">
+
+        </activity>
+
+        <receiver android:name="com.example.ramadanalarm.AlarmReciever_Ifter"
+            android:enabled="true">
+        </receiver>
+        <receiver android:name="com.example.ramadanalarm.AlarmReciever_Sehri"
+            android:enabled="true">
+        </receiver>
+        <service android:name=".AlarmService_Sehri"
+            android:foregroundServiceType="mediaPlayback">
+        </service>
+        <service android:name=".AlarmService_Ifter"
+            android:foregroundServiceType="mediaPlayback">
+        </service>
+
+    </application>
+</manifest>

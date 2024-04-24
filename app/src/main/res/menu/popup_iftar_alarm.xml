@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/hr_1"
+        android:title="১ ঘণ্টা আগে"
+        android:font="@font/charu_regular" />
+
+    <item
+        android:id="@+id/min_30"
+        android:title="৩০ মিনিট আগে"
+        android:font="@font/charu_regular" />
+
+    <item
+        android:id="@+id/min_15"
+        android:title="১৫ মিনিট আগে"
+        android:font="@font/charu_regular" />
+
+</menu>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ramadan</string>
+    <string-array name="city_names">
+        <item>Naogaon</item>
+        <item>Dhaka</item>
+        <item>Chittagong</item>
+    </string-array>
+</resources>
